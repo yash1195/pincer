@@ -11,14 +11,14 @@
 	<h2>LinkedIn Scraper for ICT department</h2>
 	<h3>Data for 2005 - 2009</h3>
 	<div>
-		To download the JSON file for 2005 - 2009, <a href='2005-2009.json'>click here</a>>
+		To download the JSON file for 2005 - 2009, <a href='2005-2009.json'>click here</a>
 	</div>
 	<div id='box1'>
 		
 	</div>
 	<h3>Data for 2011 - 2015</h3>
 	<div>
-		To download the JSON file for 2011 - 2015, <a href='2011-2015.json'>click here</a>>
+		To download the JSON file for 2011 - 2015, <a href='2011-2015.json'>click here</a>
 	</div>
 	<div id='box2'>
 		
@@ -26,26 +26,6 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-	$(document).ready(function(e){
-		// $.ajax({
-		// 	url:"2005-2009.json",
-		// 	dataType: 'jsonp',
-		// 	success:function(json){
-		//          // do stuff with json (in this case an array)
-		//          alert("Success");
-		//      },
-		//      error:function(){
-		//          alert("Error");
-		//      }      
-		// });
-		$.getJSON('2005-2009.json', function(data) {
-			var jsonStr = JSON.stringify(data);
-			document.getElementById("box1").innerHTML = jsonStr;
-    	});
-    	$.getJSON('2011-2015.json', function(data) {
-			var jsonStr = JSON.stringify(data);
-			document.getElementById("box2").innerHTML = jsonStr;
-    	});
-	});
+	
 </script>
 </html>
