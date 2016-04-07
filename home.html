@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.3/material.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js'></script>
+    <script type="text/javascript" src='js/home.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.3/material.js'></script>
+</head>
+
+<body>
+    <div class='container'>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">Pincer</span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer"></div>
+                    <!-- Navigation. We hide it in small screens. -->
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="">Settings</a>
+                    </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Pincer</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link is-active" href="#tab-1">Alumni List</a>
+                    <a class="mdl-navigation__link" href="#tab-2">Statistics</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <section id="tab-1">
+		            <div class="page-content">
+		            	<!-- List of students and company by batch -->
+		            </div>
+		        </section>
+		        <section id="tab-2">
+		            <div class="page-content hide-element">
+		            	<!-- Statistics -->
+		            	<h2>2011-2015 batch</h2>
+		            	<h4>Masters distribution</h4>
+		            	<img src="screens/2011-2015_universities.png" alt="">
+		            	<div class='page-text'>
+		            		Clemson University: 1 <br>
+							University Of Southern California: 1 <br>
+							University Of Melbourne: 1 <br>
+		            	</div>
+		            	<h4>Country distribution</h4>
+		            	<img src="screens/2011-2015_countryChart.png" alt="">
+		            	<div class='page-text'>
+		            		United States: 3 <br>
+							Australia: 1<br>
+							Iceland: 1<br>
+							Sudan: 1<br>
+							NA: 4<br>
+							Tanzania: 3<br>
+							India: 75<br>
+							Russia: 1<br>
+							Spain: 1<br>
+		            	</div>
+
+
+		            	<h2>2005-2009 batch</h2>
+		            	<h4>Masters distribution</h4>
+		            	<img src="screens/2005-2009_universities.png" alt="">
+		            	<div class='page-text'>
+		            		London Business School 1 <br>
+							University Of Alberta 1<br>
+							The University Of Texas At Austin 1<br>
+							Indian Institute Of Management, Calcutta 1<br>
+							Singapore Management University 1<br>
+							Stanford University 1<br>
+							Management Development Institute 1<br>
+							University Of Oulu 1<br>
+							Welingkar Institute Of Management 1<br>
+		            	</div>
+		            	<h4>Country distribution</h4>
+		            	<img src="screens/2005-2009_countryChart.png" alt="">
+		            	<div class='page-text'>
+		            		Canada 1 <br>
+							United Kingdom 1 <br>
+							Yemen 1<br>
+							United States 3<br>
+							Mexico 1<br>
+							Iceland 1<br>
+							Finland 1<br>
+							India 12<br>
+							NA 1<br>
+		            	</div>
+		            </div>
+		        </section>			
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

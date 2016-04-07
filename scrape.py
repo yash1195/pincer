@@ -18,7 +18,10 @@ def stripTags(inpText):
 #returns a dictionary with the details
 def scrapeProfile(regNo,link):
 	print "\r> Scraping LinkedIn for Registration No. %s" % regNo
-	br.open(link)
+	try:
+		br.open(link)
+	except:
+		pass
 	tmp = {}
 
 	tmp['_rollNo']		= regNo
@@ -118,19 +121,19 @@ userLinks.append(tmpLink)
 userList = []
 
 #reading input from file
-with open("l1.csv", "rw+") as fs:
+with open("in.csv", "rw+") as fs:
 	linkList = fs.read().splitlines()
 
 for i in linkList:
 	k,v = i.split(',')
-	scrapeProfile(k,v)
+	if v == "":
+		tmp = {}
+		tmp['_rollNo']		= k
+		userList.append(tmp)
+	else:
+		scrapeProfile(k,v)
 
 
-# for k,v in tmpLink.items():
-# 	scrapeProfile(k,v)
-
-# # print userList
-# # print userList
 
 with open("list.json","w") as f:
     json.dump(userList,f)

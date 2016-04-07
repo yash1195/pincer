@@ -1,0 +1,15 @@
+body{
+	margin:0;
+}
+.hide-element{
+	display: none;
+}	
+.list-name-company{
+	
+	width: 70vw;
+}
+
+.page-content{
+	margin-top:5vh;
+	margin-left: 15vw;
+}
