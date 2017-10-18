@@ -5,8 +5,6 @@ import json
 br = RoboBrowser(history=True,parser="lxml")
 br.open('https://www.linkedin.com/')
 form = br.get_form(action="https://www.linkedin.com/uas/login-submit")
-form["session_key"].value = "zeko1195@gmail.com"
-form["session_password"].value = "hellozeko"
 br.submit_form(form)
 
 #strips all tags
